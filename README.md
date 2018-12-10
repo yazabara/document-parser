@@ -5,3 +5,22 @@ Application parse docx file:
 
 To add some handler use class: ```com.yazabara.documentparser.parser.DocxParser```
 
+Example:
+```$xslt
+new DocxParser(config.getPath())
+                .addHandler(
+                    new ParseCondition(),
+                    new ParseHandler()
+                ),
+                .addPairHandler(
+                     new ParseRangeCondition()
+                        .withStart(...)
+                        .withEnd(...),
+                     new ParseRangeHandler()
+                         .withFirst(...)
+                         .withCommon(...)
+                         .withLast(...)
+                 ),
+                 ...
+                 .parse()
+```
