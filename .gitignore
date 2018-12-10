@@ -1,0 +1,12 @@
+/.idea/*
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+classes/
+
+.gradle/
+/build/
+/out/
+/src/main/java/com/yazabara/documentparser/secret/*
