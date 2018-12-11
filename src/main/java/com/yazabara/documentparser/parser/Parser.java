@@ -9,7 +9,7 @@ public interface Parser {
 
     Parser addHandler(ParseCondition condition, ParseHandler handler);
 
-    Parser addPairHandler(ParseRangeCondition condition, ParseRangeHandler handler);
+    Parser addRangeHandler(ParseRangeCondition condition, ParseRangeHandler handler);
 
     void parse();
 }

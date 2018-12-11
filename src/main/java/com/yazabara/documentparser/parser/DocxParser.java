@@ -45,7 +45,7 @@ public class DocxParser implements Parser {
     }
 
     @Override
-    public DocxParser addPairHandler(ParseRangeCondition condition, ParseRangeHandler handler) {
+    public DocxParser addRangeHandler(ParseRangeCondition condition, ParseRangeHandler handler) {
         if (condition != null && handler != null) {
             this.rangeListeners.put(condition, handler);
         }
